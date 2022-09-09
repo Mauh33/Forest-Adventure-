@@ -1,3 +1,5 @@
+/* General */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,4 +7,47 @@
   list-style: none;
 }
 
+:root {
+  --color-t : white;
+  --font-t : 'Poppins', sans-serif;
+}
 
+body {
+  font: var(--font-t);
+  color: var(--color-t);
+}
+
+
+
+
+
+/* Flux */
+
+/* .flux {
+  width: 150rem ;
+  max-width: 1800px;
+}
+ */
+
+
+
+/* Header */
+/*
+.header {
+  position: relative;
+  background-size: cover;
+}
+
+
+.header__cover {
+  width: 100vw;
+}
+
+
+
+/* Navbar */
+
+/* .navbar {
+  position: absolute;
+  z-index: -1;
+} */
