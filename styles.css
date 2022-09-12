@@ -8,13 +8,16 @@
 }
 
 :root {
-  --color-t : white;
+  --color-t : rgb(241, 243, 239);
+  --color-extra: hsl(79, 94%, 21%);
+  --color-grey: lightgrey;
   --font-t : 'Poppins', sans-serif;
 }
 
 body {
-  font: var(--font-t);
+  font-family: var(--font-t);
   color: var(--color-t);
+  background-color: hsl(79, 45%, 65%)
 }
 
 
@@ -23,31 +26,138 @@ body {
 
 /* Flux */
 
-/* .flux {
-  width: 150rem ;
-  max-width: 1800px;
+ .flux {
+  margin-left: 5%;
+  max-width: 94%;
+  overflow: hidden;
 }
- */
+
+
+
+
+
+/* Media query : mobile */
+
+@media screen and (min-width: 768px) {
+
+}
+
+
+
+
+/* Media query Tablet */
+
+@media screen and (min-width: 992px) {
+
+}
+
+
+
+
+/* Media query normal screen */
+
+@media screen and (min-width: 1200px) {
+
+}
+
+
+
+
+/* Media query XL screen */
+
+@media screen and (min-width: 1200px) {
+
+  /* .header {
+    position: relative;
+    background-size: cover;
+  } */
+
+
+
+
+}
+
+
+/* Texts */
+
+
+.title {
+ font-weight: 800;
+ font-size: 2.7em;
+ margin-left: 2.7vw;
+}
+
+.color__btn {
+  border: 0;
+  background-color: var(--color-extra);
+  box-shadow: -10px -9px 22px -1.5px khaki;
+  border-radius: 0.8rem;
+  width: 120px;
+  height: 50px;
+
+}
+
+.shadow__texts {
+  text-shadow: -1.5px 1px 2px black;
+}
+
+
 
 
 
 /* Header */
-/*
+
 .header {
-  position: relative;
-  background-size: cover;
+  width: 90vw;
+  height: 100vh;
+  box-shadow :-5px -1px 13px -1px rgb(80 75 33), 5px -1px 19px -4px rgb(80 75 33);
 }
 
 
 .header__cover {
-  width: 100vw;
+  width: 90vw;
+  height: 100vh;
+  background-size: cover;
 }
-
 
 
 /* Navbar */
 
-/* .navbar {
+.navbar {
   position: absolute;
-  z-index: -1;
-} */
+  padding: 50px 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 200px;
+  box-sizing: border-box;
+  color: var(--color-t);
+}
+
+
+.navbar__bloc {
+  margin-right: 120px;
+}
+
+.navbar__ul {
+  display: flex;
+}
+
+
+.navbar__listelements {
+  padding: 0 0.7vw;
+  text-align: center;
+}
+
+.navbar__a {
+  margin: 0 25px;
+  font-size: 20px;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+a:visited, a:link, a:hover, a:active {
+  color: var(--color-t);
+}
+
