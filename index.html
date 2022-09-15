@@ -54,5 +54,16 @@
       />
     </header>
     <!-- End : Header -->
+
+    <!-- Start : navbar button script -->
+    <script>
+      const menuHamburger = document.querySelector(".menu-burger");
+      const navLinks = document.querySelector(".navbar__bloc");
+
+      menuHamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
+    </script>
+    <!-- End : navbar button script -->
   </body>
 </html>
