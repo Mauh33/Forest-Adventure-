@@ -139,7 +139,6 @@ a:visited, a:link, a:hover, a:active {
     width:auto;
   }
 
-
   .header {
     width: 100%;
     height: 100%;
@@ -167,6 +166,10 @@ a:visited, a:link, a:hover, a:active {
 @media screen and (min-width: 1336px) {
 
 
+  .title {
+    top:inherit;
+  }
+
   .flux {
     margin-left: 5%;
     max-width: 94%;
@@ -192,8 +195,19 @@ a:visited, a:link, a:hover, a:active {
   height: 200px;
   }
 
+  .navbar__bloc {
+    background-color: unset;
+    backdrop-filter: none;
+    margin-left: 450px;
+  }
+
   .navbar__ul {
     display: flex;
+    flex-direction: row;
+  }
+
+  .navbar__listelements {
+    width: -webkit-fill-available;
   }
 
   .menu-burger {
@@ -211,12 +225,12 @@ a:visited, a:link, a:hover, a:active {
 
 
 .header {
-  width: 83vw;
+  width: 85vw;
   height: 100vh;
   box-shadow :-5px -1px 13px -1px rgb(80 75 33), 5px -1px 19px -4px rgb(80 75 33);
 }
 .header__cover {
-  width: 83vw;
+  width: 85vw;
 }
 
 }
